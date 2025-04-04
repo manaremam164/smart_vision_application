@@ -1,0 +1,4 @@
+enum DayType {
+  light,
+  night
+}
