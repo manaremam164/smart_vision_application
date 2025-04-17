@@ -3,6 +3,8 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:smart_vision_application/core/routing/app_router.dart';
 import 'package:smart_vision_application/data/repositories/local/cache_repository.dart';
 import 'package:smart_vision_application/presentation/screens/camera_view.dart';
+import 'package:smart_vision_application/presentation/screens/home/home_screen_navigator.dart';
+import 'package:smart_vision_application/presentation/screens/home_screen.dart';
 import 'package:smart_vision_application/presentation/screens/splash/splash_screen.dart';
 
 Future<void> requestPermissions() async {
@@ -39,7 +41,7 @@ class SmartVisionApp extends StatelessWidget {
       ),
       // onGenerateRoute: AppRouter.generateRoute,
       // initialRoute: SplashScreen.route
-      home: const ObjectDetectionScreen(),
+      home: const HomeScreenNavigator(),
     );
   }
 }
